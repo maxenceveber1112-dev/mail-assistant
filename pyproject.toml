@@ -1,0 +1,12 @@
+[project]
+name = "mail-assistant"
+version = "0.1.0"
+description = "Agent quasi autonome de reponse aux mails de Maxence Veber (Outlook/Viacesi + OneDrive)"
+requires-python = ">=3.12"
+dependencies = ["mistralai-agents[koyeb]>=1.1.0"]
+
+[tool.uv]
+package = false
+
+[tool.mistralai.agents]
+entrypoint = "main:agent"
